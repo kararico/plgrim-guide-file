@@ -1,0 +1,409 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+pre {
+  display: block;
+  margin: 0;
+  white-space: pre;
+}
+
+code {
+  display: block;
+  font-size: 12px;
+  overflow-x: auto;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/NotoSansKR-Black.woff") format("woff");
+  src: url("/assets/fonts/NotoSansKR-Black.woff") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/NotoSansKR-Bold.woff") format("woff");
+  src: url("/assets/fonts/NotoSansKR-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/NotoSansKR-Light.woff") format("woff");
+  src: url("/assets/fonts/NotoSansKR-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/NotoSansKR-Medium.woff") format("woff");
+  src: url("/assets/fonts/NotoSansKR-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/assets/fonts/NotoSansKR-Regular.woff") format("woff");
+  src: url("/assets/fonts/NotoSansKR-Regular.ttf") format("truetype");
+}
+.custom-table {
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+.layout_table table {
+  text-align: center;
+  width: 100%;
+  background: rgb(189, 184, 184);
+}
+.layout_table table th, .layout_table table td {
+  padding: 16px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+.layout_table table tbody tr th {
+  border-left: none;
+  background: #46637f;
+  font-weight: bold;
+  color: #fff;
+}
+.layout_table table tbody tr td {
+  border-right: none;
+  background: #e7e9eb;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.layout_table table tbody tr td a {
+  display: block;
+  margin: 5px 0;
+  color: #2883f3;
+  text-decoration: underline;
+}
+.layout_table.col_tabel table tr th {
+  background: #46637f;
+  font-weight: bold;
+  color: #fff;
+  border-bottom: 0;
+}
+header {
+  position: fixed;
+  z-index: 99;
+  overflow: hidden;
+  overflow-y: auto;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #FFF;
+  box-shadow: 1px 0 20px RGB(0 0 0/8%);
+}
+header .nav-title {
+  background: #F7FAFC;
+  padding: 20px 25px;
+  border-bottom: 1px solid #DDD;
+  color: #000;
+  font-size: 20px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+header .nav-title a {
+  display: flex;
+  align-items: baseline;
+}
+header .nav-title a img {
+  display: inline-block;
+  width: 70px;
+}
+header .nav-title a span {
+  margin-left: 10px;
+  font-size: 12px;
+  color: #666;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+header .nav li {
+  border-bottom: 1px solid #edeff0;
+}
+header .nav li span {
+  position: relative;
+  font-size: 18px;
+  color: #666;
+  display: block;
+  padding: 15px 35px 15px 25px;
+  border-bottom: 1px solid #edeff0;
+}
+header .nav li a {
+  position: relative;
+  font-size: 18px;
+  color: #666;
+  display: block;
+  padding: 15px 35px 15px 25px;
+}
+header .nav li ul li {
+  padding-left: 10px;
+}
+header .nav li.on span {
+  font-weight: bold;
+}
+header .nav li.on > a {
+  padding-left: 20px;
+  color: #000;
+  border-left: 5px solid #01A0E9;
+  background: #f5f6f7;
+}
+header .nav li.on ul li a.on {
+  font-weight: bold;
+}
+header .nav li.on ul li a.on:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 22px;
+  left: 14px;
+  width: 5px;
+  height: 5px;
+  background: #00a1ed;
+  border-radius: 10px;
+}
+
+main {
+  width: 100%;
+  padding: 80px 0 200px 250px;
+  box-sizing: border-box;
+}
+main .main-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+main .main-inner section {
+  margin-bottom: 50px;
+}
+main .main-inner section h2 {
+  margin-bottom: 30px;
+  font-size: 46px;
+  color: #111;
+  font-weight: 700;
+  letter-spacing: -1px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #111;
+}
+main .main-inner section h3 {
+  position: relative;
+  padding: 0 0 20px 15px;
+  font-size: 24px;
+  font-weight: 400;
+  color: #4b77be;
+  letter-spacing: -1px;
+}
+main .main-inner section h3:before {
+  display: inline-block;
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background: #4b77be;
+}
+main .main-inner section h4 {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #4b77be;
+  letter-spacing: -1px;
+}
+main .main-inner section .custom-block {
+  margin-top: 30px;
+  border-color: #00a1ed;
+  padding: 20px 30px;
+  font-size: 16px;
+  background-color: #f3f5f7;
+  border-left-width: 8px;
+  border-left-style: solid;
+  letter-spacing: -1px;
+}
+main .main-inner section .custom-block p {
+  line-height: 1.7;
+  font-weight: 300;
+}
+main .main-inner section .custom-block p a {
+  color: #00a1ed;
+}
+main .main-inner section .code-rule {
+  padding: 0 0 20px 20px;
+}
+main .main-inner section .code-rule strong {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
+main .main-inner section .code-rule ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+main .main-inner section .code-rule ul li:after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #000;
+  border-radius: 10px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+main .main-inner section .code-rule.last {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+main .button-content {
+  display: flex;
+  justify-content: flex-end;
+}
+main .button-content button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #0d6efd;
+  color: #fff;
+  margin: 0;
+  padding: 10px 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+}
+footer {
+  padding: 18px 0;
+  background-color: #f0f0f0;
+}
+footer .js-btn-scrollMove {
+  position: fixed;
+  top: -58px;
+  height: 100%;
+  width: auto;
+  right: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+  opacity: 0;
+}
+footer .js-btn-scrollMove a {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  opacity: 1;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  transition: 0.5s;
+  z-index: 500;
+  box-sizing: border-box;
+}
+footer .js-btn-scrollMove a span {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.25);
+  display: block;
+  border-radius: 50%;
+}
+footer .js-btn-scrollMove a span:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #fff;
+  transform: rotate(45deg);
+  border-bottom: 0;
+  border-right: 0;
+  margin-left: -5px;
+  margin-top: -3px;
+}
+footer .copyright {
+  text-align: center;
+}/*# sourceMappingURL=app.css.map */

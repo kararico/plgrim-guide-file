@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플그림 가이드</title>
+    <link rel="icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="/assets/app.css">
+    
+    <link rel="stylesheet" href="/assets/common/styles/a11y-dark.min.css">
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/jquery.include.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+
+<body>
+    <script>$.include("assets/js/header.inc");</script>
+
+    <main>
+        <div class="main-inner">
+            <section>
+                <h2>라이브러리</h2>
+                <h3>탭</h3>
+                
+              
+            </section>
+
+            <!-- <section>
+                <h3>파일 및 폴더</h3>
+                <div class="code-rule">
+                    <ul>
+                        <li>스네이크 표기법(underbar_nate)을 사용한다.</li>
+                    </ul>
+                </div>
+                <div class="layout_table col_tabel">
+                    <table>
+                        <caption class="blind">예약어</caption>
+                        <colgroup>
+                            <col span="2" style="width:25%;">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>예약어</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="8">사이트 레이아웃</td>
+                                <td>.wrap</td>
+                                <td>사이트 전체영역</td>
+                            </tr>
+                            <tr>
+                                <td>.skipNav</td>
+                                <td>바로가기 영역</td>
+                            </tr>
+                            <tr>
+                                <td>.header</td>
+                                <td>머리글 영역</td>
+                            </tr>
+                            <tr>
+                                <td>.container</td>
+                                <td>페이지 영역</td>
+                            </tr>
+                            <tr>
+                                <td>.aside</td>
+                                <td>사이드 영역</td>
+                            </tr>
+                            <tr>
+                                <td>.content</td>
+                                <td>본문 영역</td>
+                            </tr>
+                            <tr>
+                                <td>.footer</td>
+                                <td>바닥글 영역</td>
+                            </tr>
+                            <tr>
+                                <td>#popXXX</td>
+                                <td>레이어팝업 페이지별 ID</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section>
+                <h3>CALSS 선택자</h3>
+                <div class="code-rule">
+                    <ul>
+                        <li>체인 선택자의 개수는 3개까지 권장한다.</li>
+                        <li>클래스 예약어는 상황에 맞게 선택적으로 참고한다.</li>
+                        <li>레이아웃에 한하여 정의된 예시이며, 자세한 내용은 설계가이드를 참고한다.</li>
+                    </ul>
+                </div>
+
+                <div class="layout_table col_tabel">
+                    <table>
+                        <caption class="blind">예약어</caption>
+                        <colgroup>
+                            <col span="2" style="width:25%;">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>예약어</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="7">네비게이션</td>
+                                <td>.anb</td>
+                                <td>전체메뉴 (All Navigation Bar)</td>
+                            </tr>
+                            <tr>
+                                <td>.gnb</td>
+                                <td>대표메뉴 (Global Navigation Bar)</td>
+                            </tr>
+                            <tr>
+                                <td>.mnb</td>
+                                <td>모바일메뉴 (Mobile Navigation Bar) : 반응형에서 구분할때 사용</td>
+                            </tr>
+                            <tr>
+                                <td>.snb</td>
+                                <td>서브메뉴 (Sub Navigation Bar)</td>
+                            </tr>
+                            <tr>
+                                <td>.unb</td>
+                                <td>기타메뉴 (Utility Navigation Bar)</td>
+                            </tr>
+                            <tr>
+                                <td>.qnb</td>
+                                <td>빠른메뉴 (Quick Navigation Bar)</td>
+                            </tr>
+                            <tr>
+                                <td>.fnb</td>
+                                <td>바닥글메뉴 (Footer Navigation Bar)</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="7">컨텐츠 레이아웃</td>
+                                <td>.content</td>
+                                <td>본문 영역</td>
+                            </tr>
+                            <tr>
+                                <td>.content-header</td>
+                                <td>본문 헤더 영역</td>
+                            </tr>
+                            <tr>
+                                <td>.content-body</td>
+                                <td>본문 내용 영역</td>
+                            </tr>
+                            <tr>
+                                <td>.section-wrap</td>
+                                <td>컨텐츠 바깥그룹</td>
+                            </tr>
+                            <tr>
+                                <td>.section</td>
+                                <td>컨텐츠 기본그룹</td>
+                            </tr>
+                            <tr>
+                                <td>.section-header</td>
+                                <td>컨텐츠 헤더그룹</td>
+                            </tr>
+                            <tr>
+                                <td>.section-body</td>
+                                <td>컨텐츠 내용그룹</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </section>
+
+            <section>
+                <h3>이미지 네이밍 규칙</h3>
+                <div class="code-rule">
+                    <ul>
+                        <li>종류별로 스프라이트 방식을 적용한다.</li>
+                        <li>이미지 네이밍의 조합은 '형태_의미_순서_상태'의 순서로 조합한다.</li>
+                    </ul>
+                </div>
+                <div class="layout_table col_tabel">
+                    <table>
+                        <caption class="blind">이미지 예약어</caption>
+                        <colgroup>
+                            <col span="2" style="width:25%;">
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>분류</th>
+                                <th>파일명</th>
+                                <th>설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>아이콘</td>
+                                <td>ico_</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>화살표</td>
+                                <td>arw_</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>블릿</td>
+                                <td>bul_</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>배경</td>
+                                <td>bg_</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>비주얼</td>
+                                <td>visual_</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>일반</td>
+                                <td>img_</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>임시</td>
+                                <td>@</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </section> -->
+
+
+        </div>
+    </main>
+
+    <script>$.include("assets/js/footer.inc");</script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

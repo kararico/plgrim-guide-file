@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플그림 가이드</title>
+    <link rel="icon" href="/assets/images/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    
+    <script src="assets/js/lib/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/lib/jquery.include.js"></script>
+
+</head>
+
+<body>
+    <script>$.include("assets/js/header.inc");</script>
+
+    <main>
+        <div class="main-inner">
+
+            <section>
+                <h2>기본정책</h2>
+                <h3>프로젝트 환경</h3>
+                <div class="custom-table">
+                    <div class="layout_table row_tabel">
+                        <table>
+                            <caption class="blind">프로젝트 환경 정의</caption>
+                            <colgroup>
+                                <col style="width:35%;">
+                                <col style="width:65%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">문서 및 버전</th>
+                                    <td>HTML5, CSS3</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">인코딩</th>
+                                    <td>UTF-8</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">웹 유형</th>
+                                    <td>PC, Mobile, Responcive</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">PC 웹 호환성</th>
+                                    <td>ie, chrome, firefox, safari</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Mobile 웹 호환성</th>
+                                    <td>안드로이드 0.x 이상, IOS 10.x 이상, 사파리, 크롬, 삼성인터넷</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">웹 접근성</th>
+                                    <td>none</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">해상도 기준 / 디자인 너비</th>
+                                    <td>1920px / 1200px</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h3>파일 &frasl; 폴더 규칙</h3>
+                <div class="layout_table col_tabel">
+                    <table>
+                        <caption class="blind">파일구조</caption>
+                        <colgroup>
+                            <col style="width:15%">
+                            <col style="width:15%">
+                            <col style="width:30%">
+                            <col style="width:40%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th>분류 폴더</th>
+                                <th>서브 폴더</th>
+                                <th>파일 이름</th>
+                                <th>파일 설명</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>fonts</td>
+                                <td></td>
+                                <td></td>
+                                <td>웹폰트</td>
+                            </tr>
+                            <tr>
+                                <td>css</td>
+                                <td></td>
+                                <td>app.css</td>
+                                <td>스타일 - CSS 가져오기</td>
+                            </tr>
+                            <tr>
+                                <td>scss</td>
+                                <td></td>
+                                <td>
+                                    <ul>
+                                        <li>
+                                            <a href="assets/common/files/_base.scss" download>base.scss</a>
+                                            <a href="assets/common/files/_board.scss" download>board.scss</a>
+                                            <a href="assets/common/files/_button.scss" download>button.scss</a>
+                                            <a href="assets/common/files/_icon.scss" download>icon.scss</a>
+                                            <a href="assets/common/files/_layout.scss" download>layout.scss</a>
+                                            <a href="assets/common/files/_mixin.scss" download>mixin.scss</a>
+                                            <a href="assets/common/files/_popup.scss" download>popup.scss</a>
+                                            <a href="assets/common/files/_swiper.scss" download>swiper.scss</a>
+                                            <a href="assets/common/files/_table.scss" download>table.scss</a>
+                                            <a href="assets/common/files/_text.scss" download>text.scss</a>
+                                            <a href="assets/common/files/_variable.scss" download>variable.scss</a>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    스타일 - CSS<br>
+                                    스타일 - 초기화<br>
+                                    스타일 - 공통형태<br>
+                                    스타일 - 게시판<br>
+                                    스타일 - 버튼<br>
+                                    스타일 - 아이콘<br>
+                                    스타일 - 레이아웃<br>
+                                    스타일 - 전체영역<br>
+                                    스타일 - 특정화면<br>
+                                    스타일 - 공통팝업<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>js</td>
+                                <td>libs<br>(라이브러리)</td>
+                                <td>
+                                    jquery.min.js<br>
+                                    html5shiv-printshiv.js
+                                </td>
+                                <td>
+                                    스크립트 - Jquery Core<br>
+                                    스크립트 - HTML5 호환성
+                                </td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>pub<br>(퍼블모듈)</td>
+                                <td>
+                                    pub_device.js<br>
+                                    pub_ui.js<br>
+                                    pub_plugins.js
+                                </td>
+                                <td>
+                                    스크립트 - 기기체크<br>
+                                    스크립트 - 공통 UI<br>
+                                    스크립트 - 플러그인
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>img</td>
+                                <td>
+                                    cmn<br>
+                                    cnt<br>
+                                </td>
+                                <td></td>
+                                <td>
+                                    공통이미지<br>
+                                    서브이미지<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>html</td>
+                                <td>
+                                    _layout<br>
+                                    _pages
+                                </td>
+                                <td></td>
+                                <td>
+                                    공통페이지<br>
+                                    화면페이지
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script>$.include("assets/js/footer.inc");</script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
